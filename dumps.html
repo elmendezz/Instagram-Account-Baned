@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volcado de Datos Recuperados</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        :root {
+            --background-color: #121212;
+            --container-bg-color: #1e1e1e;
+            --primary-text-color: #e0e0e0;
+            --secondary-text-color: #a8a8a8;
+            --border-color: #363636;
+            --header-color: #3498db;
+            --font-main: 'Roboto', sans-serif;
+        }
+        body {
+            background-color: var(--background-color);
+            color: var(--primary-text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .data-section {
+            background-color: var(--container-bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 25px;
+            padding: 25px;
+        }
+        .data-section h2 {
+            color: var(--header-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        th {
+            color: var(--secondary-text-color);
+            font-weight: 500;
+            width: 35%;
+        }
+        td {
+            font-weight: 300;
+        }
+        tr:last-child th, tr:last-child td {
+            border-bottom: none;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--header-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Volver al Perfil</a>
+
+        <div id="personal-info" class="data-section">
+            <h2>Información Personal y de Registro</h2>
+            <table>
+                <tr><th>Nombre de Usuario</th><td>_elmendez_</td></tr>
+                <tr><th>Fecha de Registro</th><td>10 de mayo de 2018</td></tr>
+                <tr><th>Género</th><td>Hombre</td></tr>
+                <tr><th>Pronombres</th><td>he/el</td></tr>
+                <tr><th>Seguidores (último conteo)</th><td>1456</td></tr>
+                 <tr><th>Cuenta Privada</th><td>No</td></tr>
+            </table>
+        </div>
+
+        <div id="login-activity" class="data-section">
+            <h2>Actividad de la Cuenta</h2>
+            <table>
+                <tr><th>Último inicio de sesión registrado</th><td>20 de diciembre de 2024, 6:21 am</td></tr>
+                <tr><th>Último cierre de sesión registrado</th><td>22 de mayo de 2025, 8:24 pm</td></tr>
+                <tr><th>Último cambio de contraseña</th><td>30 de abril de 2024, 10:18 pm</td></tr>
+            </table>
+        </div>
+
+        <div id="privacy-status" class="data-section">
+            <h2>Cambios de Privacidad y Estado</h2>
+            <table>
+                <tr><th>Último cambio a cuenta privada</th><td>12 de noviembre de 2024, 3:25 pm</td></tr>
+                <tr><th>Último cambio a cuenta pública</th><td>18 de febrero de 2025, 6:41 am</td></tr>
+                <tr><th>Última desactivación de cuenta</th><td>27 de mayo de 2025, 9:12 pm (Automatizada)</td></tr>
+                <tr><th>Última reactivación de cuenta</th><td>5 de octubre de 2025, 8:05 pm (Manual, Fallida)</td></tr>
+                <tr><th>Fecha de baneo de cuenta</th><td>22 de mayo de 2025, 1:47 pm - Causa Desconocida</td></tr>
+            </table>
+        </div>
+
+        <div id="device-info" class="data-section">
+            <h2>Información de Dispositivo y Ubicación</h2>
+            <table>
+                <tr><th>Última latitud (imprecisa)</th><td>32.6947...</td></tr>
+                <tr><th>Última longitud (imprecisa)</th><td>-116.594...</td></tr>
+            </table>
+        </div>
+
+        <div id="settings" class="data-section">
+            <h2>Configuraciones y Preferencias</h2>
+            <table>
+                <tr><th>Permitir comentarios de</th><td>Todos</td></tr>
+                <tr><th>Uso de mensajes entre apps</th><td>No configurado</td></tr>
+                 <tr><th>Consentimientos de datos</th><td>Aceptados en el registro</td></tr>
+            </table>
+        </div>
+
+        <div id="ads-info" class="data-section">
+            <h2>Preferencias de Anuncios</h2>
+            <table>
+                <tr><th>Anuncios sobre Meta</th><td>Actividad usada para mostrar anuncios en Meta Services</td></tr>
+                <tr><th>Anuncios ocultos</th><td>(No hay datos recuperables)</td></tr>
+                <tr><th>Perfiles no interesados</th><td>(No hay datos recuperables)</td></tr>
+                 <tr><th>Posts no interesados</th><td>(No hay datos recuperables)</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
